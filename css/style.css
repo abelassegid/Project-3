@@ -1,0 +1,144 @@
+/* css decorations */
+:root{
+    --bg-color:#2d3945;
+    --title-color:#3b4752;
+    --p-color:#bcc1c4;
+    --white-color:#fff;
+}
+/* helper */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul,ol{
+    list-style: none;
+}
+input,button{
+    font-size: inherit;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0.2rem;
+}
+/* end of helper */
+
+/* header begins */
+.header-main{
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3rem;
+}
+.header,h1{
+    font-size: 2.5rem;
+}
+/* end of header */
+
+/* start of section */
+.title-main{
+    width: 100%;
+    margin-top: 4rem;
+}
+.title h2{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--title-color);
+}
+.title p{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--p-color);
+}
+/* end of section */
+
+/* start of form reg */
+.form-reg-main{
+    width: 100%;
+    margin-top: 2rem;
+}
+.form{
+    width: 90%;
+    border-top:6px solid var(--bg-color);
+    margin: 0 auto;
+}
+.input-group label,
+.input-group input{
+    display: block;
+    width: 100%;
+} 
+fieldset{
+    border: 0;
+    border-top: 3px solid var(--bg-color);
+    margin-top: 4px;
+    padding-top: 3rem;
+}
+.input-group h3{
+    text-align: center;
+}
+.input-group label{
+    color: var(--p-color);
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+.input-group input{
+    padding: 1.5rem;
+}
+.input-group input[placeholder="required"]{
+    text-align: right;
+    color: var(--p-color);
+}
+.input-group input:focus{
+    outline: 0;
+}
+.input-group #zip{
+    width: 20rem;
+}
+/* end of form reg */
+
+/* start of media for desktop */
+@media screen and (min-width:768px){
+    .header,h1{
+        font-size: 4rem;
+    }
+    .title h2{
+        font-size: 3rem;
+    .title p{
+        font-size: 2.4rem;
+    }
+}
+@media screen and (min-width:768px){
+    .input-group{
+        display: flex;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .input-group label{
+        width: 20rem;
+    }
+    .input-group input{
+        width: 60%;
+    }
+    .input-group #zip{
+        width: 20rem;
+    }
+}
+/* end of media for desktop */
